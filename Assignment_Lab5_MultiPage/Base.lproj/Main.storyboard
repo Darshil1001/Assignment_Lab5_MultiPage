@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WuP-6o-Jx5">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="a0o-Wz-Jj9">
+            <objects>
+                <navigationController id="WuP-6o-Jx5" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qqe-Dn-nrl">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="mIE-Uh-pDD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nee-sF-UV9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1013" y="-2"/>
+        </scene>
+        <!--Wonder World-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Assignment_Lab5_MultiPage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="Odw-sN-SeG">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQg-Cw-3Ri">
+                                <rect key="frame" x="157.66666666666666" y="522" width="78" height="35"/>
+                                <color key="backgroundColor" red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Level 2"/>
+                                <connections>
+                                    <segue destination="w6k-t4-9be" kind="show" id="TIO-8J-doz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPG-fZ-UYM">
+                                <rect key="frame" x="158.66666666666666" y="315" width="76" height="35"/>
+                                <color key="backgroundColor" red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Level 1"/>
+                                <connections>
+                                    <segue destination="rF0-0A-dZF" kind="show" id="yPn-V7-ans"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lu8-jD-jcD">
+                                <rect key="frame" x="294" y="712" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="V3d-vr-Mon"/>
+                                    <constraint firstAttribute="height" constant="50" id="hng-x1-9yV"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="InfoIcon"/>
+                                <connections>
+                                    <segue destination="9JD-WW-gAA" kind="presentation" id="Po4-0F-d56"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Odw-sN-SeG" secondAttribute="trailing" id="3ce-PR-hb0"/>
+                            <constraint firstItem="CQg-Cw-3Ri" firstAttribute="top" secondItem="HPG-fZ-UYM" secondAttribute="bottom" constant="172" id="7ib-xD-0dz"/>
+                            <constraint firstItem="Odw-sN-SeG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="AaD-hL-ZtX"/>
+                            <constraint firstItem="CQg-Cw-3Ri" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DHx-9k-2IR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lu8-jD-jcD" secondAttribute="trailing" constant="49" id="EHJ-nR-qlS"/>
+                            <constraint firstItem="HPG-fZ-UYM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NIr-jM-lEf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lu8-jD-jcD" secondAttribute="bottom" constant="56" id="OVa-ME-m0Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Odw-sN-SeG" secondAttribute="bottom" id="hNT-OZ-7rx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CQg-Cw-3Ri" secondAttribute="bottom" constant="261" id="nWM-DF-LdP"/>
+                            <constraint firstItem="Odw-sN-SeG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qEQ-0F-zJo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Wonder World" id="CCM-xW-KPy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zaZ-xS-uar">
+            <objects>
+                <viewController id="9JD-WW-gAA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BfV-qt-R3w">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="InfoPageBackground" translatesAutoresizingMaskIntoConstraints="NO" id="1Ii-TK-yGV">
+                                <rect key="frame" x="0.0" y="59" width="393" height="724"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gwG-RV-WJB">
+                                <rect key="frame" x="76.666666666666686" y="136.66666666666663" width="240" height="510"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Tgz-ih-FdV"/>
+                                    <constraint firstAttribute="height" constant="510" id="hGt-Zm-wnU"/>
+                                </constraints>
+                                <string key="text">Our application offers a diverse collection of stories suitable for children of all ages.Level 1: Preschool (Ages 2-4) - Perfect for the littlest readers, Level 1 focus on topics like colors, shapes, animals, and everyday experiences, engaging toddlers and helping them develop language skills.Level 2: Early Elementary (Ages 5-7) - Designed for emerging readers, Level 2 encourage children to explore themes such as friendship, teamwork, and problem-solving, laying the foundation for independent reading.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Qm3-WB-zCj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gwG-RV-WJB" firstAttribute="centerY" secondItem="BfV-qt-R3w" secondAttribute="centerY" id="2rd-Ef-gmv"/>
+                            <constraint firstItem="Qm3-WB-zCj" firstAttribute="bottom" secondItem="1Ii-TK-yGV" secondAttribute="bottom" id="4Zx-D5-uKI"/>
+                            <constraint firstItem="1Ii-TK-yGV" firstAttribute="top" secondItem="Qm3-WB-zCj" secondAttribute="top" id="IMM-Pc-B8P"/>
+                            <constraint firstItem="1Ii-TK-yGV" firstAttribute="leading" secondItem="Qm3-WB-zCj" secondAttribute="leading" id="Kmk-RF-84P"/>
+                            <constraint firstItem="gwG-RV-WJB" firstAttribute="centerX" secondItem="BfV-qt-R3w" secondAttribute="centerX" id="RHb-2V-xb8"/>
+                            <constraint firstItem="Qm3-WB-zCj" firstAttribute="trailing" secondItem="1Ii-TK-yGV" secondAttribute="trailing" id="xhA-r0-ilP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eNc-8r-IS3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WDP-NG-L1d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47" y="787"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vw2-cq-ccK">
+            <objects>
+                <viewController id="w6k-t4-9be" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="86Y-qb-ocD">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Level1Background" translatesAutoresizingMaskIntoConstraints="NO" id="wbb-GV-5xG">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q1e-Kg-71Y">
+                                <rect key="frame" x="108.33333333333333" y="408.66666666666669" width="176.66666666666669" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="The Magical Garden"/>
+                                <connections>
+                                    <segue destination="vuc-B0-Gaj" kind="show" id="rQd-3l-lL6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mlO-oV-5Gl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mlO-oV-5Gl" firstAttribute="bottom" secondItem="wbb-GV-5xG" secondAttribute="bottom" id="AIl-Ok-ToK"/>
+                            <constraint firstItem="q1e-Kg-71Y" firstAttribute="centerY" secondItem="86Y-qb-ocD" secondAttribute="centerY" id="Bbr-5M-e7e"/>
+                            <constraint firstItem="wbb-GV-5xG" firstAttribute="top" secondItem="mlO-oV-5Gl" secondAttribute="top" id="Oud-BC-cN7"/>
+                            <constraint firstItem="wbb-GV-5xG" firstAttribute="leading" secondItem="mlO-oV-5Gl" secondAttribute="leading" id="hiS-Fa-PHF"/>
+                            <constraint firstItem="q1e-Kg-71Y" firstAttribute="centerX" secondItem="86Y-qb-ocD" secondAttribute="centerX" id="pof-eB-TzB"/>
+                            <constraint firstItem="mlO-oV-5Gl" firstAttribute="trailing" secondItem="wbb-GV-5xG" secondAttribute="trailing" id="zqy-xb-67L"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xjc-Mw-k7i"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2yp-cz-Ekh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1152" y="382"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tQT-GE-Is1">
+            <objects>
+                <viewController id="vuc-B0-Gaj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wmg-qb-F5D">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Story1Background2" translatesAutoresizingMaskIntoConstraints="NO" id="ca3-WL-fgj">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rG8-k0-jk2">
+                                <rect key="frame" x="50" y="176" width="293" height="500"/>
+                                <color key="backgroundColor" red="1" green="0.92156862745098034" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="293" id="kkA-fn-SVS"/>
+                                    <constraint firstAttribute="height" constant="500" id="n5p-XA-g49"/>
+                                </constraints>
+                                <mutableString key="text">In the heart of a bustling city, there existed a hidden gem - a secret garden brimming with enchantment. This garden, veiled from the chaos of the world, was a sanctuary of magic and wonder. Within its lush greenery resided an array of extraordinary flora, each possessing its own unique charm.Among the inhabitants of this mystical garden was a spirited young girl named Lily. With eyes as bright as the morning sun, Lily spent her days exploring every corner of the garden, fascinated by its mysteries.One day, while admiring a bed of vibrant blooms, Lily encountered a shimmering blue flower unlike any she had seen before."Hello, dear traveler," the flower greeted in a melodious voice.Lily gasped in astonishment. "Are you... speaking to me?""I am Bluebell, the guardian of this wondrous garden. Would you care to engage in a delightful game?" Bluebell inquired, petals dancing in the breeze.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aAr-Rv-Hc8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rG8-k0-jk2" firstAttribute="centerX" secondItem="wmg-qb-F5D" secondAttribute="centerX" id="9MN-6Q-yMv"/>
+                            <constraint firstItem="aAr-Rv-Hc8" firstAttribute="bottom" secondItem="ca3-WL-fgj" secondAttribute="bottom" id="FqK-47-Lt5"/>
+                            <constraint firstItem="rG8-k0-jk2" firstAttribute="centerY" secondItem="wmg-qb-F5D" secondAttribute="centerY" id="HVm-BZ-oVW"/>
+                            <constraint firstItem="aAr-Rv-Hc8" firstAttribute="trailing" secondItem="ca3-WL-fgj" secondAttribute="trailing" id="IUQ-PP-2Cs"/>
+                            <constraint firstItem="ca3-WL-fgj" firstAttribute="leading" secondItem="aAr-Rv-Hc8" secondAttribute="leading" id="hkw-Hl-8Jk"/>
+                            <constraint firstItem="ca3-WL-fgj" firstAttribute="top" secondItem="aAr-Rv-Hc8" secondAttribute="top" id="lKi-kr-juG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" customizationIdentifier="" id="ZzA-Je-C23">
+                        <barButtonItem key="rightBarButtonItem" title="Page 2" id="9CE-fF-1UC">
+                            <connections>
+                                <segue destination="5qe-Jj-KdT" kind="show" id="quC-Yk-fCP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p2I-El-vRf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2082" y="382"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RWd-8x-vWh">
+            <objects>
+                <viewController id="5qe-Jj-KdT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="THg-Lt-8sO">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Story1Background2" translatesAutoresizingMaskIntoConstraints="NO" id="xWo-c6-hFw">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YVw-WW-YCr">
+                                <rect key="frame" x="50" y="176" width="293" height="500"/>
+                                <color key="backgroundColor" red="1" green="0.92156862745098034" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="293" id="1XU-Ie-T4j"/>
+                                    <constraint firstAttribute="height" constant="500" id="vMe-YE-6Vl"/>
+                                </constraints>
+                                <mutableString key="text">Intrigued, Lily nodded eagerly. "Of course! What game do you propose?""We shall partake in a game of hide and seek. I shall conceal myself, and you shall endeavor to uncover my whereabouts," Bluebell explained with a mischievous glint in her azure petals.Lily scoured every inch of the garden, her determination unwavering as she pursued the elusive Bluebell. Through thickets and groves, she ventured, her senses attuned to the whispers of the wind.After a spirited pursuit, Lily finally unraveled the flower's hiding place, nestled amidst a cluster of towering sunflowers."You have discovered my sanctuary!" Bluebell exclaimed, her voice echoing with mirth.And thus, amidst the verdant embrace of the magical garden, Lily and Bluebell forged a bond of camaraderie, embarking on countless adventures that would forever be etched in the annals of their shared memories.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9lU-MX-F4u"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9lU-MX-F4u" firstAttribute="trailing" secondItem="xWo-c6-hFw" secondAttribute="trailing" id="1sH-ik-d7J"/>
+                            <constraint firstItem="9lU-MX-F4u" firstAttribute="bottom" secondItem="xWo-c6-hFw" secondAttribute="bottom" id="Cgd-z5-uDU"/>
+                            <constraint firstItem="YVw-WW-YCr" firstAttribute="centerX" secondItem="THg-Lt-8sO" secondAttribute="centerX" id="aUR-OY-2za"/>
+                            <constraint firstItem="YVw-WW-YCr" firstAttribute="centerY" secondItem="THg-Lt-8sO" secondAttribute="centerY" id="cM2-mX-UfG"/>
+                            <constraint firstItem="xWo-c6-hFw" firstAttribute="top" secondItem="9lU-MX-F4u" secondAttribute="top" id="de7-qk-SRp"/>
+                            <constraint firstItem="xWo-c6-hFw" firstAttribute="leading" secondItem="9lU-MX-F4u" secondAttribute="leading" id="p0p-jO-GdS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uXN-wD-XHy">
+                        <barButtonItem key="backBarButtonItem" title="Page 1" id="1jF-6N-AvW"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fYu-4v-UU1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3086" y="382"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qMf-2Z-NmR">
+            <objects>
+                <viewController id="rF0-0A-dZF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RU7-Q4-Uvj">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Level1Background" translatesAutoresizingMaskIntoConstraints="NO" id="pN9-Vn-nRi">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nev-OZ-P4C">
+                                <rect key="frame" x="108.33333333333333" y="353" width="176.66666666666669" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="The Magical Garden"/>
+                                <connections>
+                                    <segue destination="eLw-41-s4p" kind="show" id="Y56-MW-MGe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euP-YY-JXO">
+                                <rect key="frame" x="107.33333333333333" y="483" width="178.66666666666669" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="The Friendly Dragon"/>
+                                <connections>
+                                    <segue destination="I3n-E9-mxR" kind="show" id="hOd-cL-v8K"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vnB-Y6-32X"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="vnB-Y6-32X" firstAttribute="bottom" secondItem="pN9-Vn-nRi" secondAttribute="bottom" id="7zF-jg-wRx"/>
+                            <constraint firstItem="vnB-Y6-32X" firstAttribute="trailing" secondItem="pN9-Vn-nRi" secondAttribute="trailing" id="OVA-NC-FiS"/>
+                            <constraint firstItem="Nev-OZ-P4C" firstAttribute="centerX" secondItem="RU7-Q4-Uvj" secondAttribute="centerX" id="RdE-dX-pwo"/>
+                            <constraint firstItem="Nev-OZ-P4C" firstAttribute="top" secondItem="vnB-Y6-32X" secondAttribute="top" constant="250" id="br8-JE-uwP"/>
+                            <constraint firstItem="pN9-Vn-nRi" firstAttribute="leading" secondItem="vnB-Y6-32X" secondAttribute="leading" id="dah-Pi-4iC"/>
+                            <constraint firstItem="vnB-Y6-32X" firstAttribute="bottom" secondItem="euP-YY-JXO" secondAttribute="bottom" constant="300" id="gAQ-lw-OwE"/>
+                            <constraint firstItem="euP-YY-JXO" firstAttribute="centerX" secondItem="RU7-Q4-Uvj" secondAttribute="centerX" id="lOO-yh-dac"/>
+                            <constraint firstItem="pN9-Vn-nRi" firstAttribute="top" secondItem="vnB-Y6-32X" secondAttribute="top" id="pMo-Q4-7TU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gJR-TV-yVa">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="wRr-tg-wGx"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K0d-BV-sxn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1062" y="-599"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cM5-55-Whx">
+            <objects>
+                <viewController id="I3n-E9-mxR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Bb-2P-RVE">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Level2Background" translatesAutoresizingMaskIntoConstraints="NO" id="EqD-LE-lhs">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g8o-MA-L6j">
+                                <rect key="frame" x="50" y="176" width="293" height="500"/>
+                                <color key="backgroundColor" red="0.93877551020408168" green="0.8571428571428571" blue="0.78231292513673467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="P4B-dE-1cr"/>
+                                    <constraint firstAttribute="width" constant="293" id="yc9-mT-HH9"/>
+                                </constraints>
+                                <mutableString key="text">In a distant land, there lived a dragon named Sparky, feared by all for his fiery breath and towering presence.But Sparky was different; he had a heart of gold and a desire for friendship.One day, he stumbled upon a village plagued by troubles and decided to help.With his strength and kindness, Sparky assisted the villagers in their daily tasks.Soon, the villagers realized that Sparky wasn't a threat but a friend.Together, they overcame challenges, explored the land, and forged unbreakable bonds.Through their friendship, fear turned into trust, and the village flourished with newfound joy.And so, Sparky the dragon became a beloved guardian, forever cherished by the village.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wgh-N7-O2t"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EqD-LE-lhs" firstAttribute="leading" secondItem="wgh-N7-O2t" secondAttribute="leading" id="0Tb-Mh-bJH"/>
+                            <constraint firstItem="g8o-MA-L6j" firstAttribute="centerY" secondItem="0Bb-2P-RVE" secondAttribute="centerY" id="Vyi-Np-1eS"/>
+                            <constraint firstItem="wgh-N7-O2t" firstAttribute="bottom" secondItem="EqD-LE-lhs" secondAttribute="bottom" id="e9V-ib-ZAM"/>
+                            <constraint firstItem="EqD-LE-lhs" firstAttribute="top" secondItem="wgh-N7-O2t" secondAttribute="top" id="evi-G3-BqC"/>
+                            <constraint firstItem="wgh-N7-O2t" firstAttribute="trailing" secondItem="EqD-LE-lhs" secondAttribute="trailing" id="hqb-8l-9Vr"/>
+                            <constraint firstItem="g8o-MA-L6j" firstAttribute="centerX" secondItem="0Bb-2P-RVE" secondAttribute="centerX" id="yNK-lB-swn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Nxr-Nh-gmZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0sC-SM-Wdj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2308" y="-364"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="XNC-Cn-uGe">
+            <objects>
+                <viewController id="eLw-41-s4p" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sCC-li-bAb">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Story1Background1" translatesAutoresizingMaskIntoConstraints="NO" id="4V9-Jc-Od5">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CYd-7P-5nL">
+                                <rect key="frame" x="50" y="176" width="293" height="500"/>
+                                <color key="backgroundColor" red="0.80784313725490198" green="1" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="83s-qW-UHY"/>
+                                    <constraint firstAttribute="width" constant="293" id="LJC-nP-d88"/>
+                                </constraints>
+                                <string key="text">Once upon a time, in a cozy little town, there was a magical garden. This garden was unlike any other because it was filled with the most extraordinary plants and flowers. Each flower had its own special power. There were sunflowers that could make you laugh, roses that whispered secrets, and daisies that could grant wishes.
+
+In this magical garden, there lived a little bunny named Cotton. Cotton was a curious bunny who loved to explore every nook and cranny of the garden. One sunny morning, as Cotton hopped around, she stumbled upon a sparkling blue flower.
+
+"Hello, little one," the flower chimed.
+
+Cotton blinked in surprise. "Hello! Who are you?"</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JzA-Sd-Ul8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CYd-7P-5nL" firstAttribute="centerY" secondItem="sCC-li-bAb" secondAttribute="centerY" id="AJk-DO-duG"/>
+                            <constraint firstItem="JzA-Sd-Ul8" firstAttribute="trailing" secondItem="4V9-Jc-Od5" secondAttribute="trailing" id="Rko-FT-yGf"/>
+                            <constraint firstItem="4V9-Jc-Od5" firstAttribute="top" secondItem="JzA-Sd-Ul8" secondAttribute="top" id="bV9-kh-6AW"/>
+                            <constraint firstItem="CYd-7P-5nL" firstAttribute="centerX" secondItem="sCC-li-bAb" secondAttribute="centerX" id="f7h-iJ-EjS"/>
+                            <constraint firstItem="JzA-Sd-Ul8" firstAttribute="bottom" secondItem="4V9-Jc-Od5" secondAttribute="bottom" id="jwW-B7-Jse"/>
+                            <constraint firstItem="4V9-Jc-Od5" firstAttribute="leading" secondItem="JzA-Sd-Ul8" secondAttribute="leading" id="yAP-fB-lEM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="o7L-2m-IsT">
+                        <barButtonItem key="rightBarButtonItem" title="Page 2" id="wFC-tN-mXS">
+                            <connections>
+                                <segue destination="JJn-Cr-a6p" kind="show" id="RMs-Lb-m6X"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jpK-tm-cqQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2285" y="-1203"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="osX-Vk-DxO">
+            <objects>
+                <viewController id="JJn-Cr-a6p" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w3h-lU-mgP">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Story1Background1" translatesAutoresizingMaskIntoConstraints="NO" id="Hn1-GT-C9a">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="scO-da-eRh">
+                                <rect key="frame" x="50" y="176" width="293" height="500"/>
+                                <color key="backgroundColor" red="0.80784313725490198" green="1" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="MBI-QA-ifR"/>
+                                    <constraint firstAttribute="width" constant="293" id="xvm-zF-M9R"/>
+                                </constraints>
+                                <string key="text">"I am Bluebell, the guardian of this garden. Would you like to play a game?" Bluebell asked with a mischievous twinkle in her petals.                                         
+ "Yes, yes! What game shall we play?"
+
+And so, the game began. Cotton hopped around, peeking behind bushes and under leaves, giggling with delight. Finally, after searching high and low, she found Bluebell hiding behind a tall sunflower.
+
+Cotton grinned from ear to ear. "That was so much fun! Can we play again?"
+
+And from that day on, Cotton and Bluebell played hide and seek in the magical garden, filling their days with laughter and joy.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="H2u-Qf-poP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="scO-da-eRh" firstAttribute="centerX" secondItem="w3h-lU-mgP" secondAttribute="centerX" id="6St-BY-U86"/>
+                            <constraint firstItem="scO-da-eRh" firstAttribute="centerY" secondItem="w3h-lU-mgP" secondAttribute="centerY" id="Hg4-m6-WbU"/>
+                            <constraint firstItem="Hn1-GT-C9a" firstAttribute="top" secondItem="H2u-Qf-poP" secondAttribute="top" id="L50-Ke-RM8"/>
+                            <constraint firstItem="H2u-Qf-poP" firstAttribute="trailing" secondItem="Hn1-GT-C9a" secondAttribute="trailing" id="V9O-92-PaJ"/>
+                            <constraint firstItem="Hn1-GT-C9a" firstAttribute="leading" secondItem="H2u-Qf-poP" secondAttribute="leading" id="Zfd-P0-dV5"/>
+                            <constraint firstItem="H2u-Qf-poP" firstAttribute="bottom" secondItem="Hn1-GT-C9a" secondAttribute="bottom" id="nyl-eL-dIR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="G0E-s6-7zW">
+                        <barButtonItem key="backBarButtonItem" title="Page 1" id="fNo-br-jnv"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AxV-mX-BQb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3216" y="-1204"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="1667" height="1667"/>
+        <image name="InfoIcon" width="32" height="32"/>
+        <image name="InfoPageBackground" width="889" height="1333.3333740234375"/>
+        <image name="Level1Background" width="1111.3333740234375" height="1666.6666259765625"/>
+        <image name="Level2Background" width="666.66668701171875" height="666.66668701171875"/>
+        <image name="Story1Background1" width="284.33334350585938" height="426.66665649414062"/>
+        <image name="Story1Background2" width="1111.3333740234375" height="1666.6666259765625"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
